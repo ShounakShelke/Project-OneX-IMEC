@@ -1,0 +1,1 @@
+{"version": "1.2", "classes": ["GTP", "LMP2", "GTD_PRO", "GTD"], "features": ["grid", "team", "vehicle"], "metrics": {"GTP": 0.976659466729696, "LMP2": 0.9806725554695199, "GTD_PRO": 0.6820227087811754, "GTD": 0.9783031371046699}}

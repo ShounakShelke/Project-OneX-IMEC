@@ -1,0 +1,49 @@
+# Virtual environments
+venv/
+.venv/
+env/
+.env/
+backend/venv/
+
+
+# Node.js dependencies
+node_modules/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# IDE settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Build outputs
+dist/
+build/
+*.egg-info/
+
+# Log files
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Byte-compiled files
+*.pyc
+
+# Model files (typically large)
+*.pkl
+*.joblib
+*.h5
+*.pt
+*.pth
