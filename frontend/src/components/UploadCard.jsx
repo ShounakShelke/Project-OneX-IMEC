@@ -4,39 +4,41 @@ import { motion, AnimatePresence } from "framer-motion";
 import { Upload, FileJson, Check, AlertCircle, X } from "lucide-react";
 
 const validatePracticeSchema = (data) => {
-  const requiredFields = ["CarNumber", "Team", "Driver", "LapTime", "Session"];
+  const entries = Array.isArray(data) ? data : (data.classification || []);
   const errors = [];
   
-  if (!Array.isArray(data)) {
-    return ["Data must be an array of entries"];
+  if (!Array.isArray(entries) || entries.length === 0) {
+    return ["Data must be an array of entries or contain a classification array"];
   }
 
-  data.forEach((entry, index) => {
-    requiredFields.forEach(field => {
-      if (!(field in entry)) {
-        errors.push(`Entry ${index + 1}: Missing field "${field}"`);
-      }
-    });
-  });
+  // Check for at least some common fields (flexible for old and new formats)
+  const entry = entries[0];
+  const commonFields = ["CarNumber", "number", "Team", "team", "Driver", "drivers", "LapTime", "time"];
+  const hasSomeFields = commonFields.some(field => field in entry);
+
+  if (!hasSomeFields) {
+    errors.push("Entry 1: Missing core fields (Number, Team, Driver, or Time)");
+  }
 
   return errors;
 };
 
 const validateQualifyingSchema = (data) => {
-  const requiredFields = ["CarNumber", "QualPos", "BestLap", "Driver"];
+  const entries = Array.isArray(data) ? data : (data.classification || []);
   const errors = [];
   
-  if (!Array.isArray(data)) {
-    return ["Data must be an array of entries"];
+  if (!Array.isArray(entries) || entries.length === 0) {
+    return ["Data must be an array of entries or contain a classification array"];
   }
 
-  data.forEach((entry, index) => {
-    requiredFields.forEach(field => {
-      if (!(field in entry)) {
-        errors.push(`Entry ${index + 1}: Missing field "${field}"`);
-      }
-    });
-  });
+  // Check for at least some common fields
+  const entry = entries[0];
+  const commonFields = ["CarNumber", "number", "QualPos", "position", "BestLap", "time", "Driver", "drivers"];
+  const hasSomeFields = commonFields.some(field => field in entry);
+
+  if (!hasSomeFields) {
+    errors.push("Entry 1: Missing core fields (Number, Position, Driver, or Time)");
+  }
 
   return errors;
 };
@@ -44,16 +46,36 @@ const validateQualifyingSchema = (data) => {
 const UploadCard = ({ onFilesUploaded, uploadedFiles }) => {
   const [dragActive, setDragActive] = useState(false);
 
+  const parseCSV = (csv) => {
+    const lines = csv.split("\n").filter(l => l.trim());
+    if (lines.length === 0) return [];
+    
+    // Simple CSV parser that handles basic quoted strings (enough for IMSA data)
+    const headers = lines[0].split(",").map(h => h.trim().replace(/^"|"$/g, ''));
+    return lines.slice(1).map(line => {
+      const values = line.split(",").map(v => v.trim().replace(/^"|"$/g, ''));
+      const obj = {};
+      headers.forEach((h, i) => {
+        obj[h] = values[i];
+      });
+      return obj;
+    });
+  };
+
   const onDrop = useCallback((acceptedFiles) => {
     acceptedFiles.forEach(file => {
       const reader = new FileReader();
       reader.onload = () => {
         try {
-          const data = JSON.parse(reader.result);
+          const isCSV = file.name.toLowerCase().endsWith(".csv");
+          const data = isCSV ? parseCSV(reader.result) : JSON.parse(reader.result);
+          
           let errors = [];
           let type = "unknown";
 
           // Detect file type and validate
+          const entries = Array.isArray(data) ? data : (data.classification || []);
+          
           if (file.name.toLowerCase().includes("practice")) {
             type = "practice";
             errors = validatePracticeSchema(data);
@@ -65,11 +87,12 @@ const UploadCard = ({ onFilesUploaded, uploadedFiles }) => {
             errors = [];
           } else {
             // Auto-detect based on content
-            if (Array.isArray(data) && data[0]) {
-              if ("Session" in data[0]) {
+            if (Array.isArray(entries) && entries[0]) {
+              const entry = entries[0];
+              if ("Session" in entry || ("session" in data && !isCSV)) {
                 type = "practice";
                 errors = validatePracticeSchema(data);
-              } else if ("QualPos" in data[0]) {
+              } else if ("QualPos" in entry || (!isCSV && "classification" in data && file.name.toLowerCase().includes("qual"))) {
                 type = "qualifying";
                 errors = validateQualifyingSchema(data);
               }
@@ -78,7 +101,7 @@ const UploadCard = ({ onFilesUploaded, uploadedFiles }) => {
 
           const newFile = {
             name: file.name,
-            data,
+            data: entries,
             type,
             valid: errors.length === 0,
             errors,
@@ -91,7 +114,7 @@ const UploadCard = ({ onFilesUploaded, uploadedFiles }) => {
             data: null,
             type: "invalid",
             valid: false,
-            errors: ["Invalid JSON format"],
+            errors: ["Failed to parse file content"],
           };
           onFilesUploaded([...uploadedFiles, newFile]);
         }
@@ -104,6 +127,7 @@ const UploadCard = ({ onFilesUploaded, uploadedFiles }) => {
     onDrop,
     accept: {
       "application/json": [".json"],
+      "text/csv": [".csv"],
     },
     onDragEnter: () => setDragActive(true),
     onDragLeave: () => setDragActive(false),

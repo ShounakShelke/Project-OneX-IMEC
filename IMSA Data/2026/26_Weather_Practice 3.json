@@ -1,0 +1,683 @@
+﻿{
+  "session": {
+    "championship_name": "IMSA WeatherTech SportsCar Championship",
+    "event_name": "Rolex 24 at Daytona",
+    "session_name": "Practice 3",
+    "report_mark": "",
+    "revised_mark": "",
+    "report_message": "Cars #04, #023, #25, #85, #120 & #123 - Some Lap times invalidated due to shortcut",
+    "session_type": "Free Practice",
+    "session_date": "23/01/2026 11:05",
+    "creation_date": "23/01/2026 12:31:50",
+    "circuit": {
+      "name": "Daytona International Speedway",
+      "length": 5729.275,
+      "country": "United States"
+    },
+    "weather": {
+      "air_temperature": "15.11 ºC",
+      "track_temperature": "12.80 ºC",
+      "track_status": "Dry"
+    },
+    "finalize_type": {
+      "type": "By Time",
+      "time_in_seconds": 4500
+    }
+  },
+  "units": {
+    "AirTemperature": "ºF",
+    "TrackTemperature": "ºF",
+    "Pressure": "inHg",
+    "WindSpeed": "MPH"
+  },
+  "meteoSamples": [
+    {
+      "time_utc_secconds": 1769184452,
+      "time_utc_str": "1/23/2026 4:07:32 PM",
+      "air_temp": 73.700060000000008,
+      "track_temp": 80.42,
+      "pressure": 68.0,
+      "wind_speed": 1.3,
+      "wind_direction": 30
+    },
+    {
+      "time_utc_secconds": 1769184517,
+      "time_utc_str": "1/23/2026 4:08:37 PM",
+      "air_temp": 73.90003999999999,
+      "track_temp": 80.42,
+      "pressure": 68.0,
+      "wind_speed": 1.9,
+      "wind_direction": 49
+    },
+    {
+      "time_utc_secconds": 1769184577,
+      "time_utc_str": "1/23/2026 4:09:37 PM",
+      "air_temp": 73.79996,
+      "track_temp": 80.6,
+      "pressure": 68.0,
+      "wind_speed": 1.9,
+      "wind_direction": 111
+    },
+    {
+      "time_utc_secconds": 1769184637,
+      "time_utc_str": "1/23/2026 4:10:37 PM",
+      "air_temp": 73.79996,
+      "track_temp": 80.6,
+      "pressure": 68.0,
+      "wind_speed": 1.3,
+      "wind_direction": 65
+    },
+    {
+      "time_utc_secconds": 1769184697,
+      "time_utc_str": "1/23/2026 4:11:37 PM",
+      "air_temp": 73.999940000000009,
+      "track_temp": 80.78,
+      "pressure": 67.0,
+      "wind_speed": 1.3,
+      "wind_direction": 78
+    },
+    {
+      "time_utc_secconds": 1769184757,
+      "time_utc_str": "1/23/2026 4:12:37 PM",
+      "air_temp": 73.999940000000009,
+      "track_temp": 80.960000000000008,
+      "pressure": 67.0,
+      "wind_speed": 1.3,
+      "wind_direction": 40
+    },
+    {
+      "time_utc_secconds": 1769184822,
+      "time_utc_str": "1/23/2026 4:13:42 PM",
+      "air_temp": 73.999940000000009,
+      "track_temp": 81.32,
+      "pressure": 67.0,
+      "wind_speed": 1.9,
+      "wind_direction": 34
+    },
+    {
+      "time_utc_secconds": 1769184887,
+      "time_utc_str": "1/23/2026 4:14:47 PM",
+      "air_temp": 73.999940000000009,
+      "track_temp": 81.5,
+      "pressure": 67.0,
+      "wind_speed": 1.3,
+      "wind_direction": 86
+    },
+    {
+      "time_utc_secconds": 1769184947,
+      "time_utc_str": "1/23/2026 4:15:47 PM",
+      "air_temp": 73.999940000000009,
+      "track_temp": 81.68,
+      "pressure": 67.0,
+      "wind_speed": 1.9,
+      "wind_direction": 27
+    },
+    {
+      "time_utc_secconds": 1769185012,
+      "time_utc_str": "1/23/2026 4:16:52 PM",
+      "air_temp": 74.10002,
+      "track_temp": 81.86,
+      "pressure": 67.0,
+      "wind_speed": 1.3,
+      "wind_direction": 239
+    },
+    {
+      "time_utc_secconds": 1769185072,
+      "time_utc_str": "1/23/2026 4:17:52 PM",
+      "air_temp": 74.19992,
+      "track_temp": 82.039999999999992,
+      "pressure": 67.0,
+      "wind_speed": 0.0,
+      "wind_direction": 243
+    },
+    {
+      "time_utc_secconds": 1769185132,
+      "time_utc_str": "1/23/2026 4:18:52 PM",
+      "air_temp": 74.300000000000011,
+      "track_temp": 82.22,
+      "pressure": 67.0,
+      "wind_speed": 0.0,
+      "wind_direction": 140
+    },
+    {
+      "time_utc_secconds": 1769185197,
+      "time_utc_str": "1/23/2026 4:19:57 PM",
+      "air_temp": 74.40008,
+      "track_temp": 82.580000000000013,
+      "pressure": 67.0,
+      "wind_speed": 0.0,
+      "wind_direction": 252
+    },
+    {
+      "time_utc_secconds": 1769185257,
+      "time_utc_str": "1/23/2026 4:20:57 PM",
+      "air_temp": 74.60006,
+      "track_temp": 82.759999999999991,
+      "pressure": 67.0,
+      "wind_speed": 0.0,
+      "wind_direction": 101
+    },
+    {
+      "time_utc_secconds": 1769185322,
+      "time_utc_str": "1/23/2026 4:22:02 PM",
+      "air_temp": 74.89994,
+      "track_temp": 82.94,
+      "pressure": 67.0,
+      "wind_speed": 1.3,
+      "wind_direction": 177
+    },
+    {
+      "time_utc_secconds": 1769185387,
+      "time_utc_str": "1/23/2026 4:23:07 PM",
+      "air_temp": 75.09992,
+      "track_temp": 83.300000000000011,
+      "pressure": 66.0,
+      "wind_speed": 0.6,
+      "wind_direction": 86
+    },
+    {
+      "time_utc_secconds": 1769185447,
+      "time_utc_str": "1/23/2026 4:24:07 PM",
+      "air_temp": 75.2,
+      "track_temp": 83.300000000000011,
+      "pressure": 66.0,
+      "wind_speed": 0.6,
+      "wind_direction": 341
+    },
+    {
+      "time_utc_secconds": 1769185507,
+      "time_utc_str": "1/23/2026 4:25:07 PM",
+      "air_temp": 75.2,
+      "track_temp": 83.12,
+      "pressure": 66.0,
+      "wind_speed": 1.3,
+      "wind_direction": 28
+    },
+    {
+      "time_utc_secconds": 1769185567,
+      "time_utc_str": "1/23/2026 4:26:07 PM",
+      "air_temp": 75.39998,
+      "track_temp": 83.12,
+      "pressure": 65.0,
+      "wind_speed": 0.0,
+      "wind_direction": 38
+    },
+    {
+      "time_utc_secconds": 1769185627,
+      "time_utc_str": "1/23/2026 4:27:07 PM",
+      "air_temp": 75.39998,
+      "track_temp": 83.66,
+      "pressure": 65.0,
+      "wind_speed": 0.6,
+      "wind_direction": 355
+    },
+    {
+      "time_utc_secconds": 1769185687,
+      "time_utc_str": "1/23/2026 4:28:07 PM",
+      "air_temp": 75.59996000000001,
+      "track_temp": 83.66,
+      "pressure": 65.0,
+      "wind_speed": 1.3,
+      "wind_direction": 169
+    },
+    {
+      "time_utc_secconds": 1769185747,
+      "time_utc_str": "1/23/2026 4:29:07 PM",
+      "air_temp": 75.70004,
+      "track_temp": 84.02,
+      "pressure": 64.0,
+      "wind_speed": 1.3,
+      "wind_direction": 157
+    },
+    {
+      "time_utc_secconds": 1769185807,
+      "time_utc_str": "1/23/2026 4:30:07 PM",
+      "air_temp": 75.90002,
+      "track_temp": 84.2,
+      "pressure": 65.0,
+      "wind_speed": 1.9,
+      "wind_direction": 234
+    },
+    {
+      "time_utc_secconds": 1769185872,
+      "time_utc_str": "1/23/2026 4:31:12 PM",
+      "air_temp": 76.1,
+      "track_temp": 84.38,
+      "pressure": 64.0,
+      "wind_speed": 1.3,
+      "wind_direction": 198
+    },
+    {
+      "time_utc_secconds": 1769185932,
+      "time_utc_str": "1/23/2026 4:32:12 PM",
+      "air_temp": 76.29998,
+      "track_temp": 84.56,
+      "pressure": 64.0,
+      "wind_speed": 0.6,
+      "wind_direction": 147
+    },
+    {
+      "time_utc_secconds": 1769185997,
+      "time_utc_str": "1/23/2026 4:33:17 PM",
+      "air_temp": 76.29998,
+      "track_temp": 84.740000000000009,
+      "pressure": 64.0,
+      "wind_speed": 0.0,
+      "wind_direction": 146
+    },
+    {
+      "time_utc_secconds": 1769186062,
+      "time_utc_str": "1/23/2026 4:34:22 PM",
+      "air_temp": 76.49996,
+      "track_temp": 84.740000000000009,
+      "pressure": 64.0,
+      "wind_speed": 0.6,
+      "wind_direction": 14
+    },
+    {
+      "time_utc_secconds": 1769186127,
+      "time_utc_str": "1/23/2026 4:35:27 PM",
+      "air_temp": 76.60004,
+      "track_temp": 84.92,
+      "pressure": 63.0,
+      "wind_speed": 0.0,
+      "wind_direction": 14
+    },
+    {
+      "time_utc_secconds": 1769186192,
+      "time_utc_str": "1/23/2026 4:36:32 PM",
+      "air_temp": 76.69994,
+      "track_temp": 84.92,
+      "pressure": 63.0,
+      "wind_speed": 0.0,
+      "wind_direction": 321
+    },
+    {
+      "time_utc_secconds": 1769186257,
+      "time_utc_str": "1/23/2026 4:37:37 PM",
+      "air_temp": 76.80002,
+      "track_temp": 84.38,
+      "pressure": 62.0,
+      "wind_speed": 0.0,
+      "wind_direction": 115
+    },
+    {
+      "time_utc_secconds": 1769186322,
+      "time_utc_str": "1/23/2026 4:38:42 PM",
+      "air_temp": 77.0,
+      "track_temp": 84.38,
+      "pressure": 62.0,
+      "wind_speed": 0.6,
+      "wind_direction": 10
+    },
+    {
+      "time_utc_secconds": 1769186387,
+      "time_utc_str": "1/23/2026 4:39:47 PM",
+      "air_temp": 77.100079999999991,
+      "track_temp": 82.94,
+      "pressure": 62.0,
+      "wind_speed": 1.3,
+      "wind_direction": 360
+    },
+    {
+      "time_utc_secconds": 1769186447,
+      "time_utc_str": "1/23/2026 4:40:47 PM",
+      "air_temp": 77.100079999999991,
+      "track_temp": 82.4,
+      "pressure": 61.0,
+      "wind_speed": 0.0,
+      "wind_direction": 317
+    },
+    {
+      "time_utc_secconds": 1769186507,
+      "time_utc_str": "1/23/2026 4:41:47 PM",
+      "air_temp": 77.199980000000011,
+      "track_temp": 82.039999999999992,
+      "pressure": 61.0,
+      "wind_speed": 0.0,
+      "wind_direction": 234
+    },
+    {
+      "time_utc_secconds": 1769186572,
+      "time_utc_str": "1/23/2026 4:42:52 PM",
+      "air_temp": 77.100079999999991,
+      "track_temp": 82.22,
+      "pressure": 61.0,
+      "wind_speed": 0.6,
+      "wind_direction": 237
+    },
+    {
+      "time_utc_secconds": 1769186637,
+      "time_utc_str": "1/23/2026 4:43:57 PM",
+      "air_temp": 77.100079999999991,
+      "track_temp": 82.759999999999991,
+      "pressure": 61.0,
+      "wind_speed": 1.9,
+      "wind_direction": 277
+    },
+    {
+      "time_utc_secconds": 1769186702,
+      "time_utc_str": "1/23/2026 4:45:02 PM",
+      "air_temp": 77.100079999999991,
+      "track_temp": 82.759999999999991,
+      "pressure": 61.0,
+      "wind_speed": 0.6,
+      "wind_direction": 242
+    },
+    {
+      "time_utc_secconds": 1769186762,
+      "time_utc_str": "1/23/2026 4:46:02 PM",
+      "air_temp": 77.100079999999991,
+      "track_temp": 82.580000000000013,
+      "pressure": 61.0,
+      "wind_speed": 0.0,
+      "wind_direction": 241
+    },
+    {
+      "time_utc_secconds": 1769186822,
+      "time_utc_str": "1/23/2026 4:47:02 PM",
+      "air_temp": 77.199980000000011,
+      "track_temp": 82.580000000000013,
+      "pressure": 61.0,
+      "wind_speed": 0.0,
+      "wind_direction": 221
+    },
+    {
+      "time_utc_secconds": 1769186882,
+      "time_utc_str": "1/23/2026 4:48:02 PM",
+      "air_temp": 77.199980000000011,
+      "track_temp": 82.94,
+      "pressure": 61.0,
+      "wind_speed": 0.6,
+      "wind_direction": 60
+    },
+    {
+      "time_utc_secconds": 1769186942,
+      "time_utc_str": "1/23/2026 4:49:02 PM",
+      "air_temp": 77.39996,
+      "track_temp": 83.12,
+      "pressure": 61.0,
+      "wind_speed": 0.0,
+      "wind_direction": 103
+    },
+    {
+      "time_utc_secconds": 1769187002,
+      "time_utc_str": "1/23/2026 4:50:02 PM",
+      "air_temp": 77.39996,
+      "track_temp": 83.84,
+      "pressure": 62.0,
+      "wind_speed": 1.3,
+      "wind_direction": 25
+    },
+    {
+      "time_utc_secconds": 1769187062,
+      "time_utc_str": "1/23/2026 4:51:02 PM",
+      "air_temp": 77.39996,
+      "track_temp": 83.84,
+      "pressure": 62.0,
+      "wind_speed": 1.9,
+      "wind_direction": 59
+    },
+    {
+      "time_utc_secconds": 1769187122,
+      "time_utc_str": "1/23/2026 4:52:02 PM",
+      "air_temp": 77.100079999999991,
+      "track_temp": 84.56,
+      "pressure": 62.0,
+      "wind_speed": 1.9,
+      "wind_direction": 51
+    },
+    {
+      "time_utc_secconds": 1769187187,
+      "time_utc_str": "1/23/2026 4:53:07 PM",
+      "air_temp": 76.899920000000009,
+      "track_temp": 84.92,
+      "pressure": 62.0,
+      "wind_speed": 0.6,
+      "wind_direction": 65
+    },
+    {
+      "time_utc_secconds": 1769187247,
+      "time_utc_str": "1/23/2026 4:54:07 PM",
+      "air_temp": 76.80002,
+      "track_temp": 84.92,
+      "pressure": 62.0,
+      "wind_speed": 1.3,
+      "wind_direction": 343
+    },
+    {
+      "time_utc_secconds": 1769187312,
+      "time_utc_str": "1/23/2026 4:55:12 PM",
+      "air_temp": 76.60004,
+      "track_temp": 84.92,
+      "pressure": 63.0,
+      "wind_speed": 1.9,
+      "wind_direction": 50
+    },
+    {
+      "time_utc_secconds": 1769187372,
+      "time_utc_str": "1/23/2026 4:56:12 PM",
+      "air_temp": 76.49996,
+      "track_temp": 84.92,
+      "pressure": 63.0,
+      "wind_speed": 1.9,
+      "wind_direction": 46
+    },
+    {
+      "time_utc_secconds": 1769187432,
+      "time_utc_str": "1/23/2026 4:57:12 PM",
+      "air_temp": 76.29998,
+      "track_temp": 85.28,
+      "pressure": 63.0,
+      "wind_speed": 2.6,
+      "wind_direction": 50
+    },
+    {
+      "time_utc_secconds": 1769187497,
+      "time_utc_str": "1/23/2026 4:58:17 PM",
+      "air_temp": 76.20008,
+      "track_temp": 85.64,
+      "pressure": 63.0,
+      "wind_speed": 5.9,
+      "wind_direction": 15
+    },
+    {
+      "time_utc_secconds": 1769187557,
+      "time_utc_str": "1/23/2026 4:59:17 PM",
+      "air_temp": 75.99992,
+      "track_temp": 85.82,
+      "pressure": 63.0,
+      "wind_speed": 0.6,
+      "wind_direction": 70
+    },
+    {
+      "time_utc_secconds": 1769187617,
+      "time_utc_str": "1/23/2026 5:00:17 PM",
+      "air_temp": 75.90002,
+      "track_temp": 86.18,
+      "pressure": 62.0,
+      "wind_speed": 1.9,
+      "wind_direction": 141
+    },
+    {
+      "time_utc_secconds": 1769187677,
+      "time_utc_str": "1/23/2026 5:01:17 PM",
+      "air_temp": 75.79994,
+      "track_temp": 86.539999999999992,
+      "pressure": 62.0,
+      "wind_speed": 0.6,
+      "wind_direction": 167
+    },
+    {
+      "time_utc_secconds": 1769187737,
+      "time_utc_str": "1/23/2026 5:02:17 PM",
+      "air_temp": 75.70004,
+      "track_temp": 86.539999999999992,
+      "pressure": 63.0,
+      "wind_speed": 0.6,
+      "wind_direction": 152
+    },
+    {
+      "time_utc_secconds": 1769187802,
+      "time_utc_str": "1/23/2026 5:03:22 PM",
+      "air_temp": 75.70004,
+      "track_temp": 86.9,
+      "pressure": 63.0,
+      "wind_speed": 2.6,
+      "wind_direction": 13
+    },
+    {
+      "time_utc_secconds": 1769187867,
+      "time_utc_str": "1/23/2026 5:04:27 PM",
+      "air_temp": 75.79994,
+      "track_temp": 87.259999999999991,
+      "pressure": 64.0,
+      "wind_speed": 2.6,
+      "wind_direction": 34
+    },
+    {
+      "time_utc_secconds": 1769187927,
+      "time_utc_str": "1/23/2026 5:05:27 PM",
+      "air_temp": 75.90002,
+      "track_temp": 87.44,
+      "pressure": 63.0,
+      "wind_speed": 3.2,
+      "wind_direction": 360
+    },
+    {
+      "time_utc_secconds": 1769187992,
+      "time_utc_str": "1/23/2026 5:06:32 PM",
+      "air_temp": 75.90002,
+      "track_temp": 87.62,
+      "pressure": 64.0,
+      "wind_speed": 3.2,
+      "wind_direction": 35
+    },
+    {
+      "time_utc_secconds": 1769188052,
+      "time_utc_str": "1/23/2026 5:07:32 PM",
+      "air_temp": 75.90002,
+      "track_temp": 87.800000000000011,
+      "pressure": 64.0,
+      "wind_speed": 1.9,
+      "wind_direction": 49
+    },
+    {
+      "time_utc_secconds": 1769188112,
+      "time_utc_str": "1/23/2026 5:08:32 PM",
+      "air_temp": 75.79994,
+      "track_temp": 87.98,
+      "pressure": 64.0,
+      "wind_speed": 3.2,
+      "wind_direction": 34
+    },
+    {
+      "time_utc_secconds": 1769188177,
+      "time_utc_str": "1/23/2026 5:09:37 PM",
+      "air_temp": 75.70004,
+      "track_temp": 88.16,
+      "pressure": 64.0,
+      "wind_speed": 1.3,
+      "wind_direction": 63
+    },
+    {
+      "time_utc_secconds": 1769188237,
+      "time_utc_str": "1/23/2026 5:10:37 PM",
+      "air_temp": 75.500059999999991,
+      "track_temp": 88.16,
+      "pressure": 64.0,
+      "wind_speed": 4.6,
+      "wind_direction": 19
+    },
+    {
+      "time_utc_secconds": 1769188302,
+      "time_utc_str": "1/23/2026 5:11:42 PM",
+      "air_temp": 75.500059999999991,
+      "track_temp": 88.34,
+      "pressure": 64.0,
+      "wind_speed": 1.9,
+      "wind_direction": 25
+    },
+    {
+      "time_utc_secconds": 1769188367,
+      "time_utc_str": "1/23/2026 5:12:47 PM",
+      "air_temp": 75.500059999999991,
+      "track_temp": 88.34,
+      "pressure": 64.0,
+      "wind_speed": 2.6,
+      "wind_direction": 25
+    },
+    {
+      "time_utc_secconds": 1769188427,
+      "time_utc_str": "1/23/2026 5:13:47 PM",
+      "air_temp": 75.59996000000001,
+      "track_temp": 88.34,
+      "pressure": 64.0,
+      "wind_speed": 0.6,
+      "wind_direction": 329
+    },
+    {
+      "time_utc_secconds": 1769188492,
+      "time_utc_str": "1/23/2026 5:14:52 PM",
+      "air_temp": 75.500059999999991,
+      "track_temp": 88.34,
+      "pressure": 64.0,
+      "wind_speed": 1.9,
+      "wind_direction": 44
+    },
+    {
+      "time_utc_secconds": 1769188552,
+      "time_utc_str": "1/23/2026 5:15:52 PM",
+      "air_temp": 75.500059999999991,
+      "track_temp": 88.34,
+      "pressure": 64.0,
+      "wind_speed": 1.9,
+      "wind_direction": 59
+    },
+    {
+      "time_utc_secconds": 1769188612,
+      "time_utc_str": "1/23/2026 5:16:52 PM",
+      "air_temp": 75.500059999999991,
+      "track_temp": 88.34,
+      "pressure": 64.0,
+      "wind_speed": 3.9,
+      "wind_direction": 53
+    },
+    {
+      "time_utc_secconds": 1769188677,
+      "time_utc_str": "1/23/2026 5:17:57 PM",
+      "air_temp": 75.59996000000001,
+      "track_temp": 88.7,
+      "pressure": 64.0,
+      "wind_speed": 5.9,
+      "wind_direction": 40
+    },
+    {
+      "time_utc_secconds": 1769188742,
+      "time_utc_str": "1/23/2026 5:19:02 PM",
+      "air_temp": 75.59996000000001,
+      "track_temp": 88.88,
+      "pressure": 64.0,
+      "wind_speed": 2.6,
+      "wind_direction": 47
+    },
+    {
+      "time_utc_secconds": 1769188802,
+      "time_utc_str": "1/23/2026 5:20:02 PM",
+      "air_temp": 75.500059999999991,
+      "track_temp": 88.88,
+      "pressure": 64.0,
+      "wind_speed": 3.2,
+      "wind_direction": 36
+    },
+    {
+      "time_utc_secconds": 1769188862,
+      "time_utc_str": "1/23/2026 5:21:02 PM",
+      "air_temp": 75.59996000000001,
+      "track_temp": 89.240000000000009,
+      "pressure": 64.0,
+      "wind_speed": 1.9,
+      "wind_direction": 40
+    }
+  ]
+}

@@ -26,8 +26,8 @@ def load_data():
     
     all_results = []
     
-    # Iterate years 2021-2024
-    years = ["2021", "2022", "2023", "2024"]
+    # Iterate years 2021-2025
+    years = ["2021", "2022", "2023", "2024", "2025"]
     
     for year in years:
         year_path = RAW_DATA_PATH / year
